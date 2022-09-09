@@ -1,0 +1,14 @@
+{
+    "configurations": [
+      {
+        "name": "Run program",
+        "program": "${file}",
+        "request": "launch",
+        "skipFiles": [
+          "<node_internals>/**"
+        ],
+        "type": "node",
+        "runtimeExecutable": "ts-node",
+      }
+    ]
+  }
