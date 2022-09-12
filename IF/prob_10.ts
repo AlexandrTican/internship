@@ -4,7 +4,7 @@ zero value to each variable. Output the new values of the variables A and B. */
 let A : number  = 10;
 let B : number = 11;
 let sum : number = A + B;
-if (A != B) {
+if (A !== B) {
     A = sum;
     B = sum;
 } else { 
