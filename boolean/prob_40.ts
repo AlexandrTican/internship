@@ -6,7 +6,7 @@ let y1 : number = 3;
 let x2 : number = 3;
 let y2 : number = 5;
 
-let check_1 : number = Math.abs(x1-x2);
-let check_2 : number = Math.abs(y1-y2);
+let check_1 : number = Math.abs(x2-x1);
+let check_2 : number = Math.abs(y2-y1);
 
 console.log((check_1 === 2 && check_2 === 1) || (check_1 === 1 && check_2 === 2));
