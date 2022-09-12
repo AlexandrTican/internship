@@ -4,34 +4,36 @@ output the zodiacal name corresponding to this date: ―Aquarius‖ 20.1–18.2,
 21.6, ―Cancer‖ 22.6–22.7, ―Leo‖ 23.7–22.8, ―Virgo‖ 23.8–22.9, ―Libra‖ 23.9–
 22.10, ―Scorpio‖ 23.10–22.11, ―Sagittarius‖ 23.11–21.12, ―Capricorn‖ 22.12–
 19.1. */
+
 let day : number = 25;
 let month : number = 12;
 let sign = ' ';
+
 switch(month){
     case 1:
-    if (day < 20)
+        if (day < 20)
        sign = "Capricorn";
-    else
+         else
        sign = "Aquarius";
-    break;
+        break;
     case 2 :
-    if (day < 19)
+        if (day < 19)
        sign = "Aquarius";
-    else
+         else
        sign = "Pisces";
        break;
     case 3: 
-    if (day < 21)
+        if (day < 21)
        sign = "Pisces";
-    else
+        else
        sign = "Aries";
-    break;
+        break;
     case 4 : 
         if (day < 20)
        sign = "Aries";
         else
        sign = "Taurus";
-    break;
+        break;
     case 5: 
         if (day < 21)
        sign = "Taurus";
@@ -47,9 +49,9 @@ switch(month){
     case 7:
         if (day < 23)
        sign = "Cancer";
-    else
+        else
        sign = "Leo";
-    break;
+        break;
     case 8:
             if (day < 23)
         sign = "Leo";
@@ -75,10 +77,10 @@ switch(month){
        sign = "Sagittarius";
         break;
     case 12:
-    if (day < 22)
+        if (day < 22)
        sign = "Sagittarius";
-    else
+        else
        sign ="Capricorn";    
-    break;
+        break;
 }
  console.log("The astrological sign for " + day + " " + month + " is " + sign );
