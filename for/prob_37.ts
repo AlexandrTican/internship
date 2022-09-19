@@ -9,12 +9,12 @@ let value : number = 0;
 
 for(let i = 0; i < n; i++){
     //console.log( "i = ",i);
-    console.log(sum);
+    value++
     for(let j = 0 ; j < n; j++){
         //console.log("j = " ,j);
         /*value = Math.pow(value,value);
         console.log(value)*/
-        value = Math.pow(value,value);
-        sum += value
+       sum += Math.pow(value,value);
     }
 }
+console.log(sum);
