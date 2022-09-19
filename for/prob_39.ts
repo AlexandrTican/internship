@@ -6,11 +6,13 @@ let B : number = 9;
 
 for(let i = A; i < B; i++){
     if(i < B && i > A){
-    console.log(i)
+    for(let j = 0; j < i; j++){
+        console.log(i)
+    }
     }
 }
-    for(let j = A ; j < B; j++){
+/* for(let j = A ; j < B; j++){
         if(j < B && j > A){
             console.log(j);
         }
-    }
+    }*/
