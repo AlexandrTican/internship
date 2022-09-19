@@ -1,8 +1,5 @@
-/*While24. An integer N (> 1) is given. An integer-valued sequence of the Fibonacci
-numbers FK is defined as:
-F1 = 1, F2 = 1, FK = FK−2 + FK−1, K = 3, 4, … .
-Determine whether N is a Fibonacci number or not, and output True or False
-respectively.*/
+/*While27. Given an integer N (> 1) that is a Fibonacci number: N = FK, find its order
+number K (see the Fibonacci numbers definition in While24).*/
 let N : number = 9;
 let i : number = 1;
 let x : number = Math.pow(N,2);
@@ -30,3 +27,4 @@ while( i <=10){
     console.log(isFibonacci(N));
     i++
 }
+console.log(i);
