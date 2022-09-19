@@ -5,16 +5,17 @@ output the result as a real number. */
 
 let n : number = 5;
 let sum : number = 0;
-let value : number = 0;
 
-for(let i = 0; i < n; i++){
+for(let i = 1; i <= n; i++){
     //console.log( "i = ",i);
-    value++
-    for(let j = 0 ; j < n; j++){
+    let produs : number = 1;
+    for(let j = 0 ; j < i; j++){
         //console.log("j = " ,j);
         /*value = Math.pow(value,value);
         console.log(value)*/
-       sum += Math.pow(value,value);
+        produs = produs * i;
     }
+    sum +=produs;
 }
 console.log(sum);
+//it works!!!!!!!!!!!!!!!!!!!!!!!!!!
