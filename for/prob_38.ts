@@ -5,12 +5,14 @@ output the result as a real number.*/
 
 let n : number = 5;
 let sum : number = 0;
-let value : number = 0;
-for( let i = 0; i < n; i++){
-    value++
-    //console.log(value)
-    for (let j = 0; j < n; j++){
-        sum += Math.pow(value,n--)
-        console.log(sum);
+let left : number = 0;
+for( let i = 1; i < n; i++){
+    left = 1;
+    sum = sum + left;
+    for (let j =1; j < n; j++){
+            left =  Math.pow(left,n--)
+       // sum = Math.pow(value,n--)
+        //sum = value + 
     }
 }
+console.log(sum);
