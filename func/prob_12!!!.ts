@@ -7,15 +7,18 @@ given sequence. */
 function IsPowerN(K:number, N:number,){
     for (let i = 1 ; i < 10 ; i++){
         if(Math.pow(N,i) === K){
-            return true;
-            console.log("Expression is true");        }
+            return true
+              }
             else{
-                console.log("Expression is false");
-                return false;
+                return false
             }
     } 
 }
 
 let k_input : number = 4;
 let n_input : number = 2;
-IsPowerN(k_input,n_input);
+if(IsPowerN(k_input,n_input) === true){
+    console.log(' Function returns true')
+}else{
+    console.log('Function returns false')
+};
