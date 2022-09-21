@@ -2,7 +2,9 @@
 
 
 function inverse(list:number[]):number{
-    
+    for(const value of list){
+        
+    }
 }
 
 
