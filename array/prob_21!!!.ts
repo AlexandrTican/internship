@@ -2,18 +2,31 @@
 given. Find the average of array elements with the order numbers in the
 range K to L inclusively. */
 
-function avgRange(list:number[],x : number , y : number):number
+function avgRange(list:number[],K : number , L : number):number
 {   let avg = 0;
-    for(let i = x ; x < y ; i++)
+   /* for(let i = K ; i <= L ; i++)
     {   
         avg += list[i]    
-    }
-    avg = avg / (y - x);
-    console.log(avg);
-    return avg;
+    }*/
+    let i = K;
+    // while ( i <= L) {
+    //     avg += list[i];
+    //     i++;
+    // }
+    // avg = avg / ((L - K)+1);
+    // console.log(avg);
+    // return avg;
+    const chunk = list.slice(K,L+1);
+    return chunk.reduce((acc,num)=>acc+=num,0)/((L-K)+1);   
 }
+
 
 let K : number = 2;
 let C : number = 5;
-let N : number[] = [1 ,2 , 3, 4, 5, 6, 7, 8,];
-console.log(avgRange(N,K,C));
+let list : number[] = [1 ,2 , 3, 4, 5, 6, 7, 8,];
+console.log(avgRange(list,K,C));
+let arr : number[] = [ 0 , 1, 2 ,3 ,4 ,5 ,6 ,7 ,8 ,9];
+let slice = arr.splice(2,3);
+console.log(arr,slice);
+
+let num : number = 12345;

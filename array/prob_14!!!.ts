@@ -6,10 +6,10 @@ Do not use conditional statements. */
 
 function oddArray(list:number[]):void
 {
-    for(let i = 0 ; (i < list.length-1); i++){
+    for(let i = 0 ; i < list.length; i+=2){
         console.log(list[i]);
     }
 }
 
-const x : number[] = [15 , 20, 25, 30, 50 , 55, 100, 200, 5000];
-console.log(oddArray(x));
+const K : number[] = [10 , 15, 20, 25, 30 , 35, 40, 45, 50];
+console.log(oddArray(K));

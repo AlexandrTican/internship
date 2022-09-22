@@ -5,18 +5,17 @@ integers and using this function, find the amount of powers of base N in the
 given sequence. */
 
 function IsPowerN(K:number, N:number,){
-    for (let i = 1 ; i < 10 ; i++){
-        if(Math.pow(N,i) === K){
+    for (let i = 0 ; i <= 10 ; i++){
+        //if(Math.pow(N,i) === K)
+        if(K === Math.pow(N,i)){
             return true
-              }
-            else{
-                return false
-            }
+              }    
     } 
+    return false;
 }
 
-let k_input : number = 4;
-let n_input : number = 2;
+let k_input : number = 794280046581;   
+let n_input : number = 21;
 if(IsPowerN(k_input,n_input) === true){
     console.log(' Function returns true')
 }else{
