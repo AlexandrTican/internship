@@ -3,19 +3,38 @@ maximums (see the local maximum definition in Array33).*/
 
 function minLMAX(list:number[]){
     const localMax: number[] =[];
-    for(let i = 0 ; i < list.length ; i++){
+    for(let i = 1 ; i < list.length ; i++){
         // if(list[i] > list[i-1] && list[i] > list[i+1]){
         //     localMax = [list[i]];
         //     console.log(localMax);
         // }
-        let num : number = 0;
-        
+        if (i === 0 && list[i] > list[i+1]) {
+            localMax.push(list[i]);
+        }
+        if(list[i] > list[i+1] && list[i] > list[i-1]){
+            localMax.push(list[i])
+        }
+    }
+    console.log(localMax);
+    let min : number = Number.MAX_SAFE_INTEGER;
+    for(const value of localMax){
+        if(value < min){
+            min = value;
+        }
+    }
+    // for(let i = 0; i < localMax.length;i++){
+    //     min = localMax[i];
+    //     if(localMax[i] < min){
+    //         min = localMax[i]
+    //     }
+    return min;
+    }
+  
     //     if(list[i] > list[i-1] && list[i] > list[i+1]){
     //     localMax.push(list[i])
     //     console.log(localMax);
     // }
-}
-return localMax;
-}
-const arr: number[] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+
+
+const arr: number[] = [3, 2, 0, 4, 3, 6, 5, 8, 9];
 console.log(minLMAX(arr));

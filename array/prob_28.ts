@@ -5,7 +5,7 @@ function minEven(list:number[]):number
 {   let min : number = 0;
     for(let i = 0 ; i < list.length ; i+=2){
         min = list[i]
-        if(min < list[i]){
+        if(list[i]< min){
             min =list[i]
         };
     }
