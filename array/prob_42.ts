@@ -5,10 +5,21 @@ two nearest numbers in Array40).an element AK such that the value |AK − R| is 
 
 function  nearSum(R : number , list:number[]):number[]{
     const sumArray :number[] = [];
-    for(const value of list){
-        list[value] += list[value+1];
-        sumArray.push(list[value]);
+    let sum : number = 0;
+    //for(let index =0 ; index <list.value){
+         //alist[value] += list[value+1];
+    //     sum
+    //     console.log(sum);
+    //     sumArray.push(list[value]);
+    // }
+    for(const indexString in list) {
+        const index = parseInt(indexString,10);
+        sum = (list[index] + list[index+1])-R;
+        
+        console.log(sum);
+        
     }
+    F;
     return sumArray;
 }
 const arr_test :number[] = [1 ,3 ,5 ,6, 7, 8, 9, 11]
