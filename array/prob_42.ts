@@ -6,22 +6,33 @@ two nearest numbers in Array40).an element AK such that the value |AK − R| is 
 function  nearSum(R : number , list:number[]):number[]{
     const sumArray :number[] = [];
     let sum : number = 0;
-    //for(let index =0 ; index <list.value){
-         //alist[value] += list[value+1];
-    //     sum
-    //     console.log(sum);
-    //     sumArray.push(list[value]);
-    // }
     for(const indexString in list) {
         const index = parseInt(indexString,10);
-        sum = (list[index] + list[index+1])-R;
-        
-        console.log(sum);
-        
+        sum = Math.abs((list[index] + list[index+1])-R);
+        sumArray.push(sum);
     }
-    F;
+    //gets rid of NaN
+    sumArray.splice(sumArray.length-1,1);
+    
+    let minSum :number = Number.MAX_SAFE_INTEGER;
+    //finds minimal sum;
+    for(const value of sumArray) {
+        if(value < minSum){
+            minSum = value;
+        }
+    };
+    //finds indexes of minimal sum
+    for (const value of sumArray){
+        if(value === minSum){
+            console.log("The indexes of values are :",sumArray.indexOf(value),sumArray.indexOf(value)+1);
+                }
+    }
+    
+
+    console.log("Minimal sum is", minSum);
     return sumArray;
 }
-const arr_test :number[] = [1 ,3 ,5 ,6, 7, 8, 9, 11]
+const arr_test :number[] = [1 ,3 ,5 ,6, 7, 8, 9, 11];
 let R2 : number = 10;
+console.log("Initial array is.." , arr_test);
 console.log(nearSum(R2,arr_test));
