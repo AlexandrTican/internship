@@ -2,7 +2,7 @@
 square (an array element is called the local minimum if it is smaller than its
 neighbors). */
 function squareMin(arr:number[]):number[]{
-    for( let i = 0; i < arr.length; i++){
+    for( let i = 0; i < arr.length ; i++){
         if ( i === 0 && arr[i] < arr[i+1]){
             arr[i] *= arr[i];
             continue;
