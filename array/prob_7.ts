@@ -10,9 +10,6 @@ function inverse(list:number[]):void
 }
 
 
-
-
-
 const x : number[] = [10,20,50,100]
 console.log(x);
 console.log(inverse(x));
