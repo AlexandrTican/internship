@@ -18,7 +18,7 @@ function ascArray(A:number[],B:number[]):number[]{
 //             }
 //         }
 //     }
-}
+
 // const A = Array.from({length:5}, (_,index)=>index++)
 const A = Array.from([5,6,7,8,9]);
 const B = Array.from({length:5},(_,index)=>index++);
