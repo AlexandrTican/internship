@@ -7,10 +7,11 @@ let quotient : number = 0;
 let remainder : number = 0;
 
 while(N > K){
-    N= N-K
+    console.log(N= N-K)
     quotient++
+    console.log( "Catul", quotient);
     if(N < K){
-        remainder = N;
+        console.log("restul", remainder = N);
     }
 }
 console.log("The quotient is ", quotient);
