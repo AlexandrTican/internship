@@ -13,21 +13,16 @@ array by one element (see the series definition in Array116). */
 // }
 
 function equalInc(arr:number[]):number[]{
-    const result:number[] = [];
+    const resultArray: Array<number> = [];
     for ( let i = 0; i < arr.length ; i++){
-        if(arr[i]=arr[i+1]){
-            if(arr[i]!=arr[i+1]){
-                result.push(arr[i]);
-            }
+        resultArray.push(arr[i]);
+        if(arr[i] != arr[i+1]){
+            resultArray.push(arr[i])
+        }else if(arr[i]=== arr[i+1]){
+            continue;
         }
-        // if(arr[i]!=arr[i+1]){
-        //     continue;
-        // }
     }
-    // for(let i = 0); i < arr.length; i++{
-    //     if[arr[i]]
-    // })
-    return result;
+    return resultArray;
 }
 const N : number[] = [1,2,2,3,3,3,3,4,4,4,4];
 console.log(equalInc(N));
