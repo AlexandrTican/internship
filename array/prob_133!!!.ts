@@ -8,19 +8,37 @@ such points then output the origin (0, 0). */
 
 /* IMPORTANT !!!!!!!!! = first and third quarter means ++ or --  : so values in x , y arrays must be ++ or -- */
 //and closest element to 0;
-     
-    function coordCheck(x:number[],y:number[]):number[]{
-        const temp : Array<number> = [];
-        const result : Array<number> =[];
-        //finding elements that are in first and third quarter, putting them in a temp array
-        for(let i = 0 ; i <x.length;i++){
-            if((x[i] >= 0 && y[i] >= 0) || (x[i]<= 0 && y[i]>=0)){
-                temp.push(x[i],y[i]);
-            }
-        }
-        //finding the element closest to 0;
-        for(let i = 0; i < temp.length;i++){
-            
-        }
-        return result;
+function pointZero(arr: number[][]){
+    //array in care se plaseaza distantele de la puncte la origine
+    let distance  : Array<number> =[];
+    for ( let i = 0 ; i < arr.length; i++){
+        let x  = arr[i][0], y= arr[i][1];
+        if((x >= 0 && y>= 0) || (x<= 0 && y>=0)){
+        distance[i] = (x*x) + (y*y);
     }
+    }
+    distance.sort(function(a,b){return a-b;});
+
+    console.log("Distance array" , distance);
+    for(let i = 0; i < arr.length; i++)
+    {
+        let x = arr[i][0], y= arr[i][0];
+        let dist = x*x + (y*y);
+        if(dist===distance[0]){
+        console.log(x,y);
+        }
+    }
+
+    // for(let i = 0; i < arr.length;i++){
+    //     let x = arr[i][0], y=arr[i][1];
+    //     let dist = (x*x) + (y*y);
+    // }
+}
+const A : number[][] = [[1,2],[-1,3],[0,0],[1,1]]
+console.log(pointZero(A));
+    //         if((x[0] >= 0 && y[0]>= 0) || (x[0]<= 0 && y[0]>=0)){
+    //            return console.log("The pair of coordinates closest to the origin is ",(x[0],y[0]));
+    //         } else{
+    //             return console.log("There are no suitable elements")
+    //         }
+    // }

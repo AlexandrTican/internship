@@ -10,15 +10,18 @@ function replaceSeries(arr:number[],length:number):any[]{
             if(arr[i]===arr[j]){
                 counter++;
                 console.log(counter);
+                if(counter===length){
+                    arr.splice(arr[i-1],counter,0);
+                    break;
             }
         }
-        if(counter===length){
-            arr.splice(arr[i],counter,0);
+        // if(counter===length){
+        //     arr.splice(arr[i],counter,0);
         }
     }
     return arr;
 }
 
 const myArray : Array<number> = [1,2,2,2,3,3,4,4];
-let L : number = 2
+let L : number = 3
 console.log(replaceSeries(myArray,L));

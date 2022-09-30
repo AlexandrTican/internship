@@ -3,22 +3,13 @@ N!! = N·(N−2)·(N−4)·…,
 where the last factor equals 2 if N is an even number, and 1 otherwise. To
 avoid the integer overflow, compute the double factorial using a real variable
 and output the result as a real number. */
-let N : number = 4;
+let N : number = 6;
 let i : number = 0;
 let temp : number = 1;
-/*
-while (i < N){
-    N = i;
-    if(N === 0 || N === 1){
-        console.log('N!! = 1')
-    }
-     N = N * (N-2);
-    console.log(" Double factorial is ", N);
-i++
-}*/
+
 while ( N > 1) {
     console.log(temp *= N);
-    console.log(N = N-2);
+    N = N-2;
 }
 console.log(temp);
 /* n= 9;
