@@ -34,7 +34,7 @@ function pointZero(arr: number[][]){
     //     let dist = (x*x) + (y*y);
     // }
 }
-const A : number[][] = [[1,2],[-1,3],[0,0],[1,1]]
+const A : number[][] = [[1,2],[-1,3],[0,0],[1,1]];
 console.log(pointZero(A));
     //         if((x[0] >= 0 && y[0]>= 0) || (x[0]<= 0 && y[0]>=0)){
     //            return console.log("The pair of coordinates closest to the origin is ",(x[0],y[0]));

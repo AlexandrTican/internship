@@ -17,7 +17,7 @@ function minLMAX(list:number[]){
 
         if(list[i] > list[i+1] && list[i] > list[i-1]){
             localMax.push(list[i])
-        }
+8        }
     }
 
     console.log(localMax);
