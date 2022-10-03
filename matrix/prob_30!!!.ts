@@ -7,7 +7,7 @@ function avgFinder(matrix:number[][]){
     // push avg of each column in an array... go through initial array again and compare with avg of column
     // for ( let rowIndex = 0 ; rowIndex < matrix.length; rowIndex++)
      for ( let rowIndex = 0; rowIndex < matrix.length;rowIndex++){
-        const row = matrix[rowIndex];
+        const row = matrix[][rowIndex];
         // for( let colIndex =0 ; colIndex < row.length; colIndex++) 
         for(let colIndex=0; colIndex < row.length;colIndex++){
             // avg += row[colIndex];
