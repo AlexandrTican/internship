@@ -41,4 +41,4 @@ function avgCompare(matrix:number[][]){
 // }
 
 const testMatrix_2 : number[][] = [[1,2,3],[3,4,5],[5,6,7],[7,8,9],[9,10,11]];
-console.log(avgCompare(testMatrix_2))
+console.log(avgCompare(testMatrix_2));
