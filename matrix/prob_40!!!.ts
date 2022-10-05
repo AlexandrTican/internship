@@ -10,10 +10,17 @@ function equalMax(matrix:number[][]){
         counter = 0;
         for(let colIndex = 0; colIndex < row.length; colIndex++){
             if(row[colIndex]===row[colIndex+1]){
-                counter++
+                counter++;
             }
         }
         //push amount of equal elements into array;
         result.push(counter);
     }
+    if(result.length === 0) { 
+        return console.log("There are no equal elements");
+    }
+    console.log("The smallest row is...",result.indexOf(Math.max(...result)));
 }
+
+const matrix : [number,number][] = [[1,1],[2,2],[2,2],[7,8],[9,10]];
+console.log(equalMax(matrix));
