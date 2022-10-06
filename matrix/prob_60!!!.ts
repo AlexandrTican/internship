@@ -4,7 +4,7 @@
 
 function ReflectMatrix(matrix:number[][]){
     for(let i = 0 ; i < matrix.length; i++) {
-        let temp : number[][]  = 0;
+        let temp : number;
         const row = matrix[i];
         for( let j = 0 ; j < matrix[0].length; j++) {
             temp = matrix[i][j];
@@ -17,3 +17,7 @@ function ReflectMatrix(matrix:number[][]){
     }
     console.log(matrix);
 }
+
+const matrixTest_3 : number[][] = [[1,2],[3,4],[5,6],[7,8],[9,10]];
+
+console.log(ReflectMatrix(matrixTest_3));
