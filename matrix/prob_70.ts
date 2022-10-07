@@ -12,11 +12,10 @@ function maxDouble(matrix: number[][]): number[][] {
       }
     }
   }
-  //another loop through matrix for doubling matrix row
+  //another loop through matrix for...stuff...
   for (let i = 0 ; i < matrix.length;i++) { 
     for ( let j = 0 ; i < matrix.length; j++) {
       if(matrix[i][j]=== max) { 
-        // matrix.splice(matrix[i][0],0,matrix[i])
 
       }
     }
