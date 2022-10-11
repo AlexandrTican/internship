@@ -1,27 +1,39 @@
 // Matrix70. An M × N matrix of real numbers is given. Double the occurrence of the
 // matrix row that contains the maximal matrix element.
 
-function maxDouble(matrix: number[][]): number[][] {
-  let max: number = Number.MIN_SAFE_INTEGER;
-
-  //finding max value
+function maxDouble(matrix: number[][]){
+  let max : number = 0;
+  let index : number = 0;
+  let result: number[][] = [[]];
+  let maxRow :number[] = [];
+  //finding max value in initial matrix; and find index number of max!!!
   for (let i = 0; i < matrix.length; i++) {
     for (let j = 0; j < matrix[0].length; j++) {
       if (matrix[i][j] > max) {
         max = matrix[i][j];
+        index = i
+        //testing index value
+        console.log("index is",i);
       }
     }
+    
   }
-  //another loop through matrix for...stuff...
+  
+  //copy all elements from first matrix to second.
   for (let i = 0 ; i < matrix.length;i++) { 
-    for ( let j = 0 ; i < matrix.length; j++) {
-      if(matrix[i][j]=== max) { 
-
+      // result[i][j] = matrix[i][j];
+      result[i] = matrix[i].slice();
+      //adds an extra line
+      if(i === index) { 
+        // result[result.length-1]=matrix[i].slice();
+        // maxRow.concat(matrix[index]);
+        // result.push(matrix[index]);
+        result[matrix.length] = matrix[i].slice();
       }
-    }
   }
-  console.log(max);
-  return matrix;
+  console.table(matrix);
+  console.table(result);
+  
 }
 
 const matrix_1: number[][] = [
