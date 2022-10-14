@@ -1,12 +1,12 @@
 class DoublyLinkedListNode {
     public value : any;
-    public next: DoublyLinkedListNode | any;
-    public prev: DoublyLinkedListNode | any;
+    public next: DoublyLinkedListNode | null;
+    public prev: DoublyLinkedListNode | null;
 }
 
 class DoublyLinkedList {
-    private head: DoublyLinkedListNode;
-    private tail: DoublyLinkedListNode;
+    private head: DoublyLinkedListNode | null;
+    private tail: DoublyLinkedListNode | null;
 
     private size: number;
 
@@ -78,8 +78,8 @@ class DoublyLinkedList {
         }
         else
         {
-            this.head = this.head.next;
-            this.head.prev = null;
+            this.head = this.head!.next;
+            this.head!.prev = null;
             this.size--;
         }
     }
@@ -99,8 +99,8 @@ class DoublyLinkedList {
         }
         else
         {
-            this.tail = this.tail.prev;
-            this.tail.next = null;
+            this.tail = this.tail!.prev;
+            this.tail!.next = null;
             this.size--;
         }
     }
