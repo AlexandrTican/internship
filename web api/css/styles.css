@@ -1,0 +1,66 @@
+:root{
+    background-color:rgb(228, 182, 121);
+}
+.menu {
+    text-align:auto;
+    color: #000000;
+    border: 0.5rem;
+    padding:0.5rem;
+    margin: 0.5rem;
+    font-size:large;
+    font-family:'Segoe UI';
+    
+}   
+.login_form {
+  font-size:large;
+  font-family:'Franklin Gothic Medium';
+  text-align:auto;
+  padding:8px;
+  border:8px;
+  margin:8px;   
+}
+
+input {
+    text-align:auto;
+    border-width:5px;
+    border-color:rgba(26, 136, 12, 0.89);
+}
+.login_form{
+    font-size:large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align:auto;
+    padding:8px;
+    border:8px;
+    margin:8px;   
+}
+header {
+    text-align:center;
+    font-weight:bold;
+    font-size:2rem;
+    text-align:center;
+
+}
+article {
+    text-align:center;
+    font-size:1.5rem;
+}
+time {
+    text-align:auto;
+    top:8px;
+    left:16px;
+    right:20px;
+    font-size:20px;
+}
+.stinky{
+    text-align:center;
+    position:auto;
+    top:50%;
+    width:100%;
+    font-size:30px;
+}
+footer {
+    position:absolute;
+    bottom:8px;
+    right:16px;
+    font-size:20px;
+}
