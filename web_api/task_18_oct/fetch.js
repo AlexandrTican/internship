@@ -7,12 +7,12 @@
 // getUsers();
 // function renderUsers()
 // // function renderUsers
-const ul = document.getElementById('authors');
+const ul = document.getElementById('users');
  const list = document.createDocumentFragment();
-  const url = 'https://jsonplaceholder.typicode.com/users/'
+  const url = 'https://jsonplaceholder.typicode.com/users/';
 
 fetch(url) .then((response) => { return response.json(); }) 
-.then((json) => { json.map(function(author) 
+.then((json) => { json.map(function(user) 
   { let li = document.createElement('li'); 
   let name = document.createElement('h2'); 
   let email = document.createElement('span');
@@ -20,11 +20,11 @@ fetch(url) .then((response) => { return response.json(); })
   let street = document.createElement('div');
   let suite = document.createElement('div');   
 
-    name.innerHTML = `${author.name}`;
-    email.innerHTML = `${author.email}`;
-    username.innerHTML = `${author.username}`;
-    street.innerHTML = `${author.address.street}`;
-    suite.innerHTML = `${author.address.suite}`;
+    name.innerHTML = `${user.name}`;
+    email.innerHTML = `${user.email}`;
+    username.innerHTML = `${user.username}`;
+    street.innerHTML = `${user.address.street}`;
+    suite.innerHTML = `${user.address.suite}`;
     li.appendChild(name);
     li.appendChild(email);
     li.appendChild(username);
@@ -37,3 +37,16 @@ fetch(url) .then((response) => { return response.json(); })
 .catch(function(error) {
   console.log(error);
 });
+
+function search(){
+    let list = document.getElementById("")
+    let field = document.getElementById("");
+    let searchString= field.value;
+    let users = search(searchString);
+
+    list.innerHTML = "";
+    users.forEach(user=> {
+        let li = document.createElement("li");
+        li.
+    })
+}
