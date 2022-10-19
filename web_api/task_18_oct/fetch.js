@@ -15,7 +15,7 @@ fetch(url) .then((response) => { return response.json(); })
 .then((json) => { json.map(function(user) 
   { let li = document.createElement('li'); 
   let name = document.createElement('h2'); 
-  let email = document.createElement('span');
+  let email = document.createElement('div');
   let username = document.createElement('div');
   let street = document.createElement('div');
   let suite = document.createElement('div');   
@@ -38,15 +38,8 @@ fetch(url) .then((response) => { return response.json(); })
   console.log(error);
 });
 
-function search(){
-    let list = document.getElementById("")
-    let field = document.getElementById("");
-    let searchString= field.value;
-    let users = search(searchString);
-
-    list.innerHTML = "";
-    users.forEach(user=> {
-        let li = document.createElement("li");
-        li.
-    })
+function mark(){
+  var context = document.querySelector(".context");
+  var obj = new Mark(context);
 }
+
