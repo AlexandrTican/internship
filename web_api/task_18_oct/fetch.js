@@ -38,10 +38,7 @@ fetch(url) .then((response) => { return response.json(); })
   console.log(error);
 });
 
-function mark(){
-  var context = document.querySelector(".context");
-  var obj = new Mark(context);
-}
+
 
 function search() {
   let input = document.getElementById('searchbar').value
