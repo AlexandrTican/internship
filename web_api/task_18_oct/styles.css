@@ -1,3 +1,27 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+  }
+  h1{
+    font-size: 2em;
+    margin-left:90px;
+}
+h2 {
+    font-size: 2rem;
+}
+ul{
+  font-size: 1.5rem;
+}
+
+ li{
+   font-size:  1.1em;
+   margin-left: 90px;
+   display: list-item;    
+   line-height: 1.5;
+  }
+
+  
+  
 #searchbar{
     margin-left: 15%;
     padding:15px;
@@ -5,7 +29,7 @@
   }
 
   input[type=text] {
-     width: 30%;
+     width: 15%;
      -webkit-transition: width 0.15s ease-in-out;
      transition: width 0.15s ease-in-out;
   }
@@ -13,33 +37,5 @@
   /* When the input field gets focus,
        change its width to 100% */
   input[type=text]:focus {
-    width: 70%;
+    width: 30%;
   }
-
-  h1{
-    font-size: 2em;
-    margin-left:90px;
-  }
- li{
-   font-size:  1.1em;
-   margin-left: 90px;
-   display: list-item;    
-  }
-
-  html {
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 10px;
-  }
-  
-  h2 {
-    font-size: 2rem;
-  }
-  
-  ul{
-    font-size: 1.5rem;
-  }
-  
-  li {
-    line-height: 1.5    ;
-  }
-  
