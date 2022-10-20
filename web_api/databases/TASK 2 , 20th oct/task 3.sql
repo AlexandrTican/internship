@@ -62,5 +62,22 @@ VALUES
 	('5.56','Only for 5.56 chambers,1000 rounds'),
 	('5.45','Only for 5.45 chambers,1000 rounds'),
 	('20 gauge','Only for 20 gauge chambers,100 shells');
-	
+
+-- insert into 
+-- 	"ItemOrders"(order_id,item_id)
+-- VALUES
+-- 	('f03e7836-a976-440b-88f7-f52adb1fa4c7','')
+-- 	('c8663463-f864-4d21-8a91-9a1231c44601','')
+-- 	('6e659188-27e3-4443-91b6-d675112a298f','')
+-- 	('187b701b-f0bd-40ef-9111-034ecfbeaafd','')
+-- 	('1943c645-641e-4813-8304-f66c333d22fb','')
+-- 	('4ec16a5c-6359-456a-a262-badbd4e46cf1','')
+-- 	('a9d534aa-3ca4-4391-82ee-2951978f6f4a','')
+-- 	('fff43e10-0c85-4880-8ec5-5d2a644fc2f4','')
+-- 	('5bbf635d-838e-4858-bab2-f0e198a305c7','')
+-- 	('c3dcb287-65d9-4e5f-8285-6620281152d1','')
+-- 	('c1746d9b-a9be-4c8f-9464-ed3597a5358e','')
+-- 	('e81ed70a-82d7-4e09-8c89-33660a53a607','')
+select * from "Items"
+
 	
