@@ -45,3 +45,22 @@ VALUES
 	('4a6932f7-c640-42c7-b578-10fc3a2b1c1d',101),
 	('db7796ad-9e62-4694-9410-6b13cf8f8d42',109),
 	('ab65a192-3449-47dd-9dc4-b6c1dc05c951',104);
+    
+insert into 
+    "Items"(item_name,item_description)
+VALUES
+	('C4 explosives',' remote controlled, just for fun'),
+	('10mm ammo','Only for 10mm chambers,20 rounds'),
+	('9x18mm ammo','Only for 9x18mm chambers,20 rounds'),
+	('9x18mm HP ammo','Only for 10mm chambers, hollow point,20 rounds'),
+	('9x19 ammo','Only for 9x19 chambers,,20 rounds'),
+	('9x19 HP ammo','Only for 9x19mm chambers,hollow point,,20 rounds'),
+	('.45 ACP','Only for 10mm chambers,20 rounds'),
+	('.357','Only for .357 chambers,20 rounds'),
+	('.50 AE','Only for .50 AE chambers,20 rounds'),
+	('12 gauge','Only for 10mm chambers,20  shells'),
+	('5.56','Only for 5.56 chambers,1000 rounds'),
+	('5.45','Only for 5.45 chambers,1000 rounds'),
+	('20 gauge','Only for 20 gauge chambers,100 shells');
+	
+	
