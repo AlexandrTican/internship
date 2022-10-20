@@ -1,5 +1,4 @@
-SELECT *
-FROM
-    "Clients"
-INNER JOIN "ClientInfo"
-on 'client_info_id' = 'client_info_id';
+SELECT * FROM "Clients"
+
+FULL OUTER JOIN "ClientInfo" 
+    on "Clients".client_info_id = "ClientInfo".client_info_id
