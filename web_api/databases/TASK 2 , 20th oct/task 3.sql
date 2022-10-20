@@ -14,3 +14,19 @@ VALUES
 	('Italy','Rome','street951'),
 	('France','Paris','street33'),
 	('Thailand','Bangkok','street30');
+INSERT INTO
+	"Clients"(username, firstName, lastName, age, email)
+Values
+('ann1','Ann','K.','27','ann.k@gmail.com'),
+('kim','Kim','Jong-Un','40','kim.j@gmail.com'),
+('joe00','Joe','Mama','59','joe.m@gmail.com'),
+('bill9','Bill','J.','19','bill.j@gmail.com'),
+('idk','John','Doe','22','john.doe@gmail.com'),
+('ann2','Ann','K.','29','ann.k1@gmail.com'),
+('joe01','Joe','Black','33','joe.black@gmail.com'),
+('bill20','Bill','D','20','bill.d@gmail.com'),
+('jane','Jane','H','22','jane@gmail.com'),
+('just1n','Justin','C','47','justin.c@gmail.com'),
+('ch','Charlie','R','29','charlie.r@gmail.com'),
+('Mike','Mike','Hunt','52','@gmail.com');
+	
