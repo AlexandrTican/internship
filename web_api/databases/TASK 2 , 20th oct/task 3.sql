@@ -15,11 +15,11 @@ VALUES
 	('France','Paris','street33'),
 	('Thailand','Bangkok','street30');
 INSERT INTO
-	"Clients"(username, firstName, lastName, age, email)
+	"Clients"(username, firstName, lastName, age, email,client_info_id)
 Values
-('ann1','Ann','K.','27','ann.k@gmail.com'),
-('kim','Kim','Jong-Un','40','kim.j@gmail.com'),
-('joe00','Joe','Mama','59','joe.m@gmail.com'),
+('ann1','Ann','K.','27','ann.k@gmail.com','fe4c60ab-71c3-48bc-9017-c64805e84469'),
+('kim','Kim','Jong-Un','40','kim.j@gmail.com','4eee371e-a6d1-42fd-9339-6c19ef3636b4'),
+('joe00','Joe','Mama','59','joe.m@gmail.com',''),
 ('bill9','Bill','J.','19','bill.j@gmail.com'),
 ('idk','John','Doe','22','john.doe@gmail.com'),
 ('ann2','Ann','K.','29','ann.k1@gmail.com'),
@@ -29,4 +29,3 @@ Values
 ('just1n','Justin','C','47','justin.c@gmail.com'),
 ('ch','Charlie','R','29','charlie.r@gmail.com'),
 ('Mike','Mike','Hunt','52','@gmail.com');
-	
