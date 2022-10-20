@@ -63,21 +63,22 @@ VALUES
 	('5.45','Only for 5.45 chambers,1000 rounds'),
 	('20 gauge','Only for 20 gauge chambers,100 shells');
 
--- insert into 
--- 	"ItemOrders"(order_id,item_id)
--- VALUES
--- 	('f03e7836-a976-440b-88f7-f52adb1fa4c7','')
--- 	('c8663463-f864-4d21-8a91-9a1231c44601','')
--- 	('6e659188-27e3-4443-91b6-d675112a298f','')
--- 	('187b701b-f0bd-40ef-9111-034ecfbeaafd','')
--- 	('1943c645-641e-4813-8304-f66c333d22fb','')
--- 	('4ec16a5c-6359-456a-a262-badbd4e46cf1','')
--- 	('a9d534aa-3ca4-4391-82ee-2951978f6f4a','')
--- 	('fff43e10-0c85-4880-8ec5-5d2a644fc2f4','')
--- 	('5bbf635d-838e-4858-bab2-f0e198a305c7','')
--- 	('c3dcb287-65d9-4e5f-8285-6620281152d1','')
--- 	('c1746d9b-a9be-4c8f-9464-ed3597a5358e','')
--- 	('e81ed70a-82d7-4e09-8c89-33660a53a607','')
-select * from "Items"
 
+insert into 
+	"ItemOrders"(order_id,item_id)
+VALUES
+	('f03e7836-a976-440b-88f7-f52adb1fa4c7','3d63ebae-8ba0-4cb8-bfcd-6e7690808658'),
+	('c8663463-f864-4d21-8a91-9a1231c44601','a48c1bd4-74dc-4ed9-9017-faf6758a284c'),
+	('6e659188-27e3-4443-91b6-d675112a298f','215ff8fd-a84b-4261-a6ba-cf6a9f02d617'),
+	('187b701b-f0bd-40ef-9111-034ecfbeaafd','5bc52a82-22be-4904-b288-e43910784584'),
+	('1943c645-641e-4813-8304-f66c333d22fb','9be8641b-20f4-48ca-bff9-66ad5f86545d'),
+	('4ec16a5c-6359-456a-a262-badbd4e46cf1','96bef4fc-0a31-45b4-a254-0eedb41fa0c2'),
+	('a9d534aa-3ca4-4391-82ee-2951978f6f4a','a7316d0c-4fdf-4ea0-9726-104b26961e58'),
+	('fff43e10-0c85-4880-8ec5-5d2a644fc2f4','d39baaf0-2f87-4414-87fc-93f03b6e0d8f'),
+	('5bbf635d-838e-4858-bab2-f0e198a305c7','8f41091e-820d-4def-8cb6-7276bb99bdc7'),
+	('c3dcb287-65d9-4e5f-8285-6620281152d1','dbd1fc99-6683-4f0c-8f07-6432951c7a8b'),
+	('c1746d9b-a9be-4c8f-9464-ed3597a5358e','ad5572b0-7057-4186-b4a4-2cf26ca019ee'),
+	('e81ed70a-82d7-4e09-8c89-33660a53a607','0f104c93-1f68-4e2e-a8ce-e62c23a5fd7a');
+
+ 
 	
