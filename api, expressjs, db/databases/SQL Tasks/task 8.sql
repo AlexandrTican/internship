@@ -1,11 +1,4 @@
-select 
-	client_id,
-	order_date,	
-	amount,
-	order_id,
-	item_id,
-	item_name
-	item_description
+select  "Orders".*, "Items".*
 from "ItemOrders"
 INNER JOIN "Orders"
 	ON "ItemOrders".order_id = "Orders".id

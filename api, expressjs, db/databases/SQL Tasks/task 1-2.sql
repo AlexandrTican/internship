@@ -8,7 +8,7 @@ create table "ClientInfo" (
 	city varchar(255) NOT NULL,
 	address varchar(255) NOT NULL
 
-)
+);
 create table "Clients" (
 	id uuid default uuid_generate_v4() constraint client_pk primary key,
 	username varchar(128) UNIQUE NOT NULL,

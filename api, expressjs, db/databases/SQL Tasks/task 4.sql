@@ -8,7 +8,7 @@ FROM
 	"Items"
 ORDER BY
 	item_name
-FETCH FIRST 10 ROW ONLY;
+FETCH FIRST 10 ROW ONLY; -- limit 10
 
 
 SELECT
