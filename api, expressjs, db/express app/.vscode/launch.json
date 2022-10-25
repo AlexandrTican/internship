@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "console": "integratedTerminal",
+      "internalConsoleOptions": "neverOpen",
+      "name": "nodemon",
+      "program": "${workspaceFolder}/src/index.ts",
+      "request": "launch",
+      "restart": true,
+      "runtimeExecutable": "nodemon",
+      "runtimeArgs": [
+        "-r", "dotenv/config",
+      ],
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node"
+    }
+  ]
+}
